@@ -273,7 +273,7 @@ export default function MainPage() {
               <DialogTitle>Directo</DialogTitle>
               <div></div>
               <DialogDescription>
-                <Link href="" target="_blank" >
+                <Link href="https://wa.me/51975677451" target="_blank" >
                   <Button className="w-50">
                     <Phone className="mr-2 h-4 w-4" />Whatsapp
                   </Button>
