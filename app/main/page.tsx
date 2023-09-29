@@ -66,7 +66,7 @@ export default function MainPage() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: "easeOut", duration: 1.8, delay: 0.5 }}
+      transition={{ ease: "easeOut", duration: 1.6, delay: 0.5 }}
     >
       <div className="fixed top-3 w-full flex justify-center">
         <NavigationMenu>
@@ -116,7 +116,7 @@ export default function MainPage() {
 
               <TabsContent
                 value="personal"
-                className="text-center text-base mt-4"
+                className="text-center text-base mt-5"
               >
                 <h1>
                   Nací con un <b>CI de 159</b>. A los 5 años, ya sabía cómo{" "}
@@ -132,7 +132,7 @@ export default function MainPage() {
                   <b>dos carreras técnicas</b> con 17 años, posteriormente fui{" "}
                   <b>becado</b> para estudiar Ciencias de la Computación.
                 </h1>
-                <div className="flex justify-center gap-2">
+                <div className="flex justify-center gap-2 mt-3">
                   <Badge variant="blue">Edad: 22 </Badge>
                   <Badge variant="red">Universidad: Stanford </Badge>
                 </div>
@@ -141,8 +141,9 @@ export default function MainPage() {
                   <Badge variant="green">Certificados: 26 </Badge>
                 </div>
               </TabsContent>
+
               <TabsContent value="work" className="text-center mt-5">
-                <h1 className="bg-white mx-16 py-1 rounded-lg text-black">
+                <h1 className="bg-white mx-16 py-2 rounded-lg text-black">
                   <b>
                     +5 años de exp
                     <br />
