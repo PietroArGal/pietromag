@@ -36,7 +36,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-import { Phone, Linkedin, Github, Send, Mail, Map, Instagram, Facebook, InstagramIcon, FileText, MessageSquarePlus } from "lucide-react";
+import { Phone, Linkedin, Github, Send, Mail, Map, Instagram, Facebook, FileText } from "lucide-react";
 
 import {
   ReactOriginal,
@@ -66,7 +66,7 @@ export default function MainPage() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: "easeOut", duration: 1.6, delay: 0.5 }}
+      transition={{ ease: "easeOut", duration: 1.3, delay: 0.3 }}
     >
       <div className="fixed top-3 w-full flex justify-center">
         <NavigationMenu>
@@ -289,7 +289,7 @@ export default function MainPage() {
               <DialogDescription>
                 <Link href="https://media.licdn.com/dms/document/media/D4E2DAQGeEa2BnqDKUQ/profile-treasury-document-pdf-analyzed/0/1686158576471?e=1697068800&v=beta&t=Yb4XJTMvLAqr4nRBiFKe93Wno55ilUbmO8m7RIflg5M" target="_blank" >
                   <Button variant="outline" className="w-50">
-                    <FileText className="mr-2 h-4 w-4" />Ver - Descargar
+                    <FileText className="mr-2 h-4 w-4" />Ver / Descargar
                   </Button>
                 </Link>
 

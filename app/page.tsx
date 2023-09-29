@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setShowSplash(false);
-    }, 1800);
+    }, 1850);
   }, []);
 
   return (
