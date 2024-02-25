@@ -16,21 +16,21 @@ export default function PortfolioPage() {
                         <NavigationMenuItem>
                             <Link href="/services" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    Servicios
+                                    Services
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="/" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    Sobre Mí
+                                    About Me
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="/portfolio" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    Portafolio
+                                    Portfolio
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>

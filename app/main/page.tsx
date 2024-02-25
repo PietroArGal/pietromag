@@ -59,6 +59,7 @@ import {
   MysqlPlain,
   PostgresqlPlain,
   RedisOriginal,
+  PhpPlain,
 } from "devicons-react";
 
 export default function MainPage() {
@@ -74,21 +75,21 @@ export default function MainPage() {
             <NavigationMenuItem>
               <Link href="/services" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Servicios
+                  Services
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Sobre Mí
+                  About Me
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/portfolio" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Portafolio
+                  Portfolio
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -104,14 +105,14 @@ export default function MainPage() {
               <AvatarFallback>PA</AvatarFallback>
             </Avatar>
             <CardTitle>Pietro Aramburú Gallardo</CardTitle>
-            <CardDescription>Ingeniero de Software</CardDescription>
+            <CardDescription>Computer Scientist</CardDescription>
           </CardHeader>
 
           <CardContent>
             <Tabs defaultValue="personal">
               <TabsList className="grid w-auto grid-cols-2 mx-14">
                 <TabsTrigger value="personal">Personal</TabsTrigger>
-                <TabsTrigger value="work">Laboral</TabsTrigger>
+                <TabsTrigger value="work">Work</TabsTrigger>
               </TabsList>
 
               <TabsContent
@@ -119,52 +120,38 @@ export default function MainPage() {
                 className="text-center text-base mt-5"
               >
                 <h1>
-                  Nací con un <b>CI de 159</b>. A los 5 años, ya sabía cómo{" "}
-                  <b>ensamblar</b> y <b>utilizar</b> una computadora, y a los 6
-                  años <b>programar</b>.
+                  I was born with 159 IQ. At the age of 5, I was assembling and using my first computers and at the age of 6 I started programming.
                 </h1>
                 <h1 className="my-3">
-                  Dedico <b>8 horas</b> al día ha programar, diseñar y crear{" "}
-                  <b>proyectos asombrosos</b>.
+                  I spend several hours a day creating amazing projects.
                 </h1>
                 <h1 className="my-3">
-                  Fuí <b>becado</b> en el colegio y me gradué en{" "}
-                  <b>dos carreras técnicas</b> con 17 años, posteriormente fui{" "}
-                  <b>becado</b> para estudiar Ciencias de la Computación.
+                  I was a scholarship holder in school and graduated in two technical careers at the age of 17, later I got a scholarship to study Computer Science.
                 </h1>
-                <div className="flex justify-center gap-2 mt-3">
-                  <Badge variant="blue">Edad: 22 </Badge>
-                  <Badge variant="red">Universidad: Stanford </Badge>
-                </div>
-                <div className="flex justify-center gap-2 mt-2">
-                  <Badge variant="gold">Proyectos: 14</Badge>
-                  <Badge variant="green">Certificados: 26 </Badge>
+                <div className="flex justify-center gap-2 mt-4">
+                  <Badge variant="blue">Age: 22 </Badge>
+                  <Badge variant="red">University: Stanford </Badge>
                 </div>
               </TabsContent>
 
               <TabsContent value="work" className="text-center mt-5">
-                <h1 className="bg-white mx-16 py-2 rounded-lg text-black">
-                  <b>
-                    +5 años de exp
-                    <br />
-                    Inglés Avanzado
-                  </b>
-                </h1>
 
-                <div className="my-5">
-                  <h1 className="mb-2">Lenguajes</h1>
+
+                <div className="my-6">
+                  <h1 className="mb-2">Languages</h1>
                   <div className="flex items-center justify-center gap-3">
                     <JavascriptOriginal size="30" />
-                    <Html5Original size="30" />
                     <TypescriptOriginal size="30" />
                     <CsharpOriginal size="30" />
+                    <PhpPlain size="30" />
+                    <Html5Original size="30" />
                     <Css3Original size="30" />
                     <PythonPlain size="30" />
                   </div>
                 </div>
 
-                <div className="mb-5">
-                  <h1 className="mb-2">Frameworks / Librerías</h1>
+                <div className="my-6">
+                  <h1 className="mb-2">Technologies</h1>
                   <div className="flex items-center justify-center gap-3">
                     <NodejsOriginal size="30" />
                     <ReactOriginal size="30" />
@@ -176,8 +163,6 @@ export default function MainPage() {
                   </div>
                 </div>
 
-                <div>
-                  <h1 className="mb-1">Extras</h1>
                   <div className="flex items-center justify-center gap-3">
                     <GraphqlPlain size="30" color="Crimson" />
                     <PostgresqlPlain size="30" />
@@ -186,6 +171,13 @@ export default function MainPage() {
                     <RedisOriginal size="30" />
                     <DockerOriginal size="30" />
                     <AmazonwebservicesOriginal size="30" />
+                  </div>
+
+                <div className="my-6">
+                  <div className="flex justify-center gap-2 mt-4">
+                    <Badge variant="blue">Spanish: Native </Badge>
+                    <Badge variant="red">English: C2 </Badge>
+                    <Badge variant="gold">Portuguese: B2 </Badge>
                   </div>
                 </div>
               </TabsContent>
@@ -202,28 +194,28 @@ export default function MainPage() {
         <Dialog>
           <DialogTrigger>
             <Button className="w-50">
-              <Send className="mr-2 h-4 w-4" /> Informacion Personal
+              <Send className="mr-2 h-4 w-4" />Personal Information
             </Button>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
 
-              <DialogTitle>Contacto</DialogTitle>
+              <DialogTitle>Contact</DialogTitle>
               <div></div>
-              <DialogDescription className="flex flex-col gap-3">
+              <DialogDescription className="flex flex-col gap-5">
                 <Link href="tel:+51975677451" className="flex gap-1 justify-center">
                   <Phone
                     strokeWidth={1}
                     size={20}
                   />
-                  <p className="text-sm">+51 975 677 451</p>
+                  <p className="text-sm">+51 951 613 233</p>
                 </Link>
                 <Link href="mailto:pietromauag@gmail.com" className="flex gap-1 justify-center">
                   <Mail
                     strokeWidth={1}
                     size={20}
                   />
-                  <p className="text-sm">pietromauag@gmail.com</p>
+                  <p className="text-sm">pietroargal@gmail.com</p>
                 </Link>
                 <Link href="" className="flex gap-1 justify-center cursor-default">
                   <Map
@@ -236,18 +228,11 @@ export default function MainPage() {
 
               <div><br /></div>
 
-              <DialogTitle>Redes Sociales</DialogTitle>
+              <DialogTitle>Social</DialogTitle>
               <div></div>
               <DialogDescription className="flex gap-3 justify-center">
                 <Link href="https://www.linkedin.com/in/pietromag/" target="_blank">
                   <Linkedin
-                    strokeWidth={1}
-                    size={22}
-                    className="hover:fill-white"
-                  />
-                </Link>
-                <Link href="https://www.instagram.com/iampietromag/" target="_blank">
-                  <Instagram
                     strokeWidth={1}
                     size={22}
                     className="hover:fill-white"
@@ -271,10 +256,8 @@ export default function MainPage() {
 
               <div><br /></div>
 
-              <DialogTitle>Directo</DialogTitle>
-              <div></div>
               <DialogDescription>
-                <Link href="https://wa.me/51975677451" target="_blank" >
+                <Link href="https://wa.me/51951613233" target="_blank" >
                   <Button className="w-50">
                     <Phone className="mr-2 h-4 w-4" />Whatsapp
                   </Button>
@@ -284,12 +267,12 @@ export default function MainPage() {
 
               <div><br /></div>
 
-              <DialogTitle>Curriculum - CV</DialogTitle>
+              <DialogTitle>Resume - CV</DialogTitle>
               <div></div>
               <DialogDescription>
                 <Link href="https://media.licdn.com/dms/document/media/D4E2DAQGeEa2BnqDKUQ/profile-treasury-document-pdf-analyzed/0/1686158576471?e=1697068800&v=beta&t=Yb4XJTMvLAqr4nRBiFKe93Wno55ilUbmO8m7RIflg5M" target="_blank" >
                   <Button variant="outline" className="w-50">
-                    <FileText className="mr-2 h-4 w-4" />Ver / Descargar
+                    <FileText className="mr-2 h-4 w-4" />Show / Download
                   </Button>
                 </Link>
 

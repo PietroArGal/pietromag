@@ -67,21 +67,21 @@ export default function ServicesPage() {
                         <NavigationMenuItem>
                             <Link href="/services" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    Servicios
+                                    Services
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="/" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    Sobre Mí
+                                    About Me
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="/portfolio" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    Portafolio
+                                    Portfolio
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
@@ -112,20 +112,7 @@ export default function ServicesPage() {
                                     </p>
                                 </div>
 
-                                <DialogTrigger>
-                                    <Button className="hover:bg-neutral-300">
-                                        <ArrowUpRight />
-                                    </Button>
-                                </DialogTrigger>
-                                <DialogContent>
-                                    <DialogHeader>
-                                        <DialogTitle>Are you sure absolutely sure?</DialogTitle>
-                                        <DialogDescription>
-                                            This action cannot be undone. This will permanently delete
-                                            your account and remove your data from our servers.
-                                        </DialogDescription>
-                                    </DialogHeader>
-                                </DialogContent>
+
 
                             </div>
                         </Dialog>
@@ -140,20 +127,7 @@ export default function ServicesPage() {
                                         Branding, Marketing, Contenido Digital y más.
                                     </p>
                                 </div>
-                                <DialogTrigger>
-                                    <Button className="hover:bg-neutral-300">
-                                        <ArrowUpRight />
-                                    </Button>
-                                </DialogTrigger>
-                                <DialogContent>
-                                    <DialogHeader>
-                                        <DialogTitle>Are you sure absolutely sure?</DialogTitle>
-                                        <DialogDescription>
-                                            This action cannot be undone. This will permanently delete
-                                            your account and remove your data from our servers.
-                                        </DialogDescription>
-                                    </DialogHeader>
-                                </DialogContent>
+
                             </div>
                         </Dialog>
                         <Dialog>
@@ -167,20 +141,7 @@ export default function ServicesPage() {
                                         Soporte, Mentoría, Documentación y más.
                                     </p>
                                 </div>
-                                <DialogTrigger>
-                                    <Button className="hover:bg-neutral-300">
-                                        <ArrowUpRight />
-                                    </Button>
-                                </DialogTrigger>
-                                <DialogContent>
-                                    <DialogHeader>
-                                        <DialogTitle>Are you sure absolutely sure?</DialogTitle>
-                                        <DialogDescription>
-                                            This action cannot be undone. This will permanently delete
-                                            your account and remove your data from our servers.
-                                        </DialogDescription>
-                                    </DialogHeader>
-                                </DialogContent>
+
                             </div>
                         </Dialog>
                         <div>

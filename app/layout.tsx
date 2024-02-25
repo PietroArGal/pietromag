@@ -8,7 +8,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'PietroMag',
   description: 'Pietro Aramburú Gallardo Portfolio',
-  themeColor: '#000'
 }
 
 export default function RootLayout({
