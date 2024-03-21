@@ -112,8 +112,6 @@ export default function ServicesPage() {
                                     </p>
                                 </div>
 
-
-
                             </div>
                         </Dialog>
                         <Dialog>
